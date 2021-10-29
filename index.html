@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suma dwóch liczb</title>
+    <title>Suma dwóch liczb / podstawy js</title>
+
 </head>
 <body>
+
+
  <h1>Pewna strona</h1>
+
+<label for="num1">Liczba 1:<input type="number" id="num1"   ></label>
+<label for="num2">Liczba 2:<input type="number" id="num2"></label>
+
  Liczba 1 <input type="number">
  liczba 2 <input type="number">
  <button>SUMA</button>   
+ <p></p>
+ <script>
+//    console.log(zm1)
+//    var zm1=0
+//    console.log(zm1)
+//    for(let zm1=0;zm1<5;zm1++){
+//        console.log(zm1)
+//    }
+//    console.log(zm1)
+//consta mamy w sercu, const to podstawa
+const num1=document.querySelector('#num1')                           
+const num2=document.querySelector('#num2')                           
+const btn=document.querySelector('button')                           
+const p=document.querySelector('p')
+btn.addEventListener('click',function(){
+
+    const suma1=parseInt(num1.value)+parseInt(num2.value);
+    p.innerHTML = `Suma wynosi: <b> ${suma1}</b>` 
+})
+
+
+</script>
 </body>
 </html>
